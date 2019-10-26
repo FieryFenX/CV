@@ -1,0 +1,150 @@
+body
+{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  margin: 2em;
+  align-items: center;
+  background-color: #444;
+}
+
+h1
+{
+  font-size: 28pt;
+  letter-spacing: 6px;
+}
+
+h2
+{
+  font-size: 12pt;
+  font-weight: 300;
+  margin-top: -15px;
+  letter-spacing: 7px;
+}
+
+section, address
+{
+  width: 320px;
+  font-size: 10pt;
+  letter-spacing: 1px;
+  color: #666;
+  line-height: 18pt;
+  font-style: normal;
+}
+
+h3
+{
+  display: inline-block;
+  letter-spacing: 7px;
+  font-size: 12pt;
+  font-weight: 700;
+  background-color: black;
+  color: beige;
+  text-align: center;
+  padding: 8px 5px 8px 12px;
+  margin-top: 35px;
+}
+
+header
+{
+  width: 780px;
+  text-align: center;
+  background-image: url("https://cdn.glitch.com/5534dfe3-c7d4-4d8b-923e-cf677abbba30%2Fleather.jpg?v=1572128172411");
+  background-size: 100% 200%;
+  color: beige;
+  height: 130px;
+  padding: 60px;
+}
+
+main
+{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+  height: 905px;
+  width: 750px;
+  background-color: beige;
+  padding: 20px 75px;
+}
+
+ul
+{
+  list-style: none;
+  padding-left: 0;
+}
+
+li
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section:nth-child(3) > ul
+{
+  list-style: disc outside;
+  padding-left: 12px;
+}
+
+section:nth-child(3) > ul > li
+{
+  display: list-item;
+  padding-left: 8px;
+}
+
+section:nth-last-child(-n+3)
+{
+  width: 290px;
+}
+
+dt
+{
+  font-weight: 700;
+  color: black;
+}
+
+dt:nth-child(2n+3)
+{
+  margin-top: 15px;
+}
+
+dd
+{
+  margin-left: 0;
+}
+
+.level
+{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80px;
+}
+
+.level > div
+{
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background-color: black;
+}
+
+.four > div:last-child,
+.three > div:nth-last-child(-n+2),
+.two > div:nth-last-child(-n+3),
+.one > div:nth-last-child(-n+4)
+{
+  background-color: gray;
+}
+
+section:nth-child(4) > ul
+{
+  width: 180px;
+}
+
+section:last-child > ul
+{
+  width: 240px;
+}
