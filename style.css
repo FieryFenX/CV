@@ -12,27 +12,33 @@ h1
 {
   font-size: 28pt;
   letter-spacing: 6px;
+  text-transform: uppercase;
 }
 
-h2
+header > p
 {
   font-size: 12pt;
   font-weight: 300;
   margin-top: -15px;
   letter-spacing: 7px;
+  text-transform: uppercase;
 }
 
-section, address
+section
 {
   width: 320px;
   font-size: 10pt;
   letter-spacing: 1px;
   color: #666;
   line-height: 18pt;
+}
+
+address
+{
   font-style: normal;
 }
 
-h3
+h2
 {
   display: inline-block;
   letter-spacing: 7px;
@@ -43,17 +49,23 @@ h3
   text-align: center;
   padding: 8px 5px 8px 12px;
   margin-top: 35px;
+  text-transform: uppercase;
+}
+
+header, main
+{
+  width: 900px;
 }
 
 header
 {
-  width: 780px;
   text-align: center;
   background-image: url("https://cdn.glitch.com/5534dfe3-c7d4-4d8b-923e-cf677abbba30%2Fleather.jpg?v=1572128172411");
   background-size: 100% 200%;
-  color: beige;
-  height: 130px;
+  color: white;
+  height: 250px;
   padding: 60px;
+  box-sizing: border-box;
 }
 
 main
@@ -62,10 +74,10 @@ main
   flex-direction: column;
   flex-wrap: wrap;
   align-content: space-between;
-  height: 905px;
-  width: 750px;
+  height: 920px;
   background-color: beige;
   padding: 20px 75px;
+  box-sizing: border-box;
 }
 
 ul
@@ -123,7 +135,16 @@ dd
   width: 80px;
 }
 
-.level > div
+.level > .value
+{
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.level > .dot
 {
   height: 10px;
   width: 10px;
@@ -131,10 +152,10 @@ dd
   background-color: black;
 }
 
-.four > div:last-child,
-.three > div:nth-last-child(-n+2),
-.two > div:nth-last-child(-n+3),
-.one > div:nth-last-child(-n+4)
+.four > .dot:last-child,
+.three > .dot:nth-last-child(-n+2),
+.two > .dot:nth-last-child(-n+3),
+.one > .dot:nth-last-child(-n+4)
 {
   background-color: gray;
 }
