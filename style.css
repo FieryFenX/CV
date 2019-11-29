@@ -45,7 +45,7 @@ h2
   font-size: 12pt;
   font-weight: 700;
   background-color: black;
-  color: beige;
+  color: #fffffa;
   text-align: center;
   padding: 8px 5px 8px 12px;
   margin-top: 35px;
@@ -75,7 +75,7 @@ main
   flex-wrap: wrap;
   align-content: space-between;
   height: 920px;
-  background-color: beige;
+  background-color: #fffffa;
   padding: 20px 75px;
   box-sizing: border-box;
 }
